@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Cusac | Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- ==========================
+         HEADER
+    =========================== -->
+    <header id="header">
+        <div class="container">
+            <h1>Elena Cusac</h1>
+            <p>Desarrolladora de Aplicaciones Web</p>
+        </div>
+
+    </header>
+
+    <!-- ==========================
+         NAVBAR
+    =========================== -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#header">
+
+                EC
+
+            </a>
+
+            <button id="theme-toggle" class="btn btn-outline-light ms-3">
+                🌙
+            </button>
+
+            <select id="language-selector" class="form-select form-select-sm ms-2" style="width:auto;">
+                <option value="es">🇪🇸 ES</option>
+                <option value="en">🇬🇧 EN</option>
+            </select>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                ☰
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-i18n="navAbout">
+                            Sobre mí
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" data-i18n="navSkills">
+                            Tecnologías
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" data-i18n="navProjects">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience" data-i18n="navExperience">
+                            Experiencia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-i18n="navContact">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ==========================
+         MAIN
+    =========================== -->
+    <main id="main" class="container-fluid">
+
+        <div class="row">
+
+            <!-- ==========================
+                 ARTICLE
+            =========================== -->
+            <article id="article" class="col-lg-9">
+
+                <!-- HERO -->
+                <section id="hero">
+
+                    <span class="hero-greeting" data-i18n="heroGreeting">
+                        Hola 👋, soy
+                    </span>
+
+                    <h1 class="hero-name">
+                        Elena Cusac
+                    </h1>
+
+                    <h2 class="hero-role">
+                        <span id="typing-text"></span>
+                    </h2>
+
+                    <p class="hero-description" data-i18n="heroDescription">
+                        Actualmente voy a comenzar el segundo año del Ciclo Formativo de Grado Superior en Desarrollo de
+                        Aplicaciones Web (DAW), donde he adquirido experiencia en el desarrollo de aplicaciones
+                        utilizando tecnologías como Java, JavaScript, HTML, CSS, Bootstrap, MySQL y Git.<br><br>
+
+                        Mi objetivo es seguir creciendo como desarrolladora Backend, participando en proyectos que me
+                        permitan aprender nuevas tecnologías, aportar valor y seguir ampliando mi experiencia
+                        profesional.
+
+                    </p>
+
+                    <div class="hero-buttons" data-i18n="heroButton">
+                        <a href="#projects" class="btn btn-primary" data-i18n="heroButton">Ver proyectos</a>
+                    </div>
+
+                    <div class="scroll-indicator">
+                        ↓
+                    </div>
+
+                </section>
+
+                <!-- SOBRE MÍ -->
+                <section id="about" class="fade-up">
+                    <h2 data-i18n="aboutTitle">Sobre mí</h2>
+                    <p data-i18n="aboutDescription">
+                        La programación es para mí una combinación de creatividad y resolución de problemas. Me gusta
+                        transformar ideas en aplicaciones funcionales, aprender nuevas tecnologías y mejorar
+                        continuamente la calidad de mi código.<br><br>
+
+                        Durante mis estudios de Desarrollo de Aplicaciones Web he trabajado en diferentes proyectos que
+                        me han permitido desarrollar habilidades tanto en frontend como en backend, utilizando
+                        tecnologías como Java, JavaScript, SQL, Git y Docker.<br><br>
+
+                        Además, en este primer año de formación he participado en el concurso regional andaluz
+                        Programame, resolviendo problemas algorítmicos y retos de programación junto con 2
+                        compañeros que me han permitido mejorar mi capacidad de análisis, lógica y resolución
+                        de problemas bajo presión y de manera cooperativa.<br><br>
+
+                        Busco seguir creciendo profesionalmente participando en proyectos donde pueda aportar mis
+                        conocimientos, asumir nuevos retos y continuar evolucionando como desarrolladora de software.
+
+                    </p>
+                </section>
+
+                <!-- TECNOLOGÍAS -->
+                <section id="skills" class="fade-up">
+                    <h2 data-i18n="skillsTitle">Tecnologías</h2>
+                    <div class="row">
+                        <div class="col-md-4">HTML5</div>
+                        <div class="col-md-4">JavaScript</div>
+                        <div class="col-md-4">Java</div>
+                        <div class="col-md-4">Python</div>
+                        <div class="col-md-4">Git</div>
+                        <div class="col-md-4">Docker</div>
+                        <div class="col-md-4">SQL</div>
+                        <div class="col-md-4">MySQL</div>
+                        <div class="col-md-4">PostgreSQL</div>
+                    </div>
+                </section>
+
+                <!-- PROYECTOS -->
+                <section id="projects" class="fade-up">
+                    <h2 data-i18n="projectsTitle">Proyectos</h2>
+
+                    <div class="project-card">
+                        <h4 data-i18n="project1Title">Proyecto 1: Programame</h4>
+                        <p data-i18n="project1Description">
+                            Colección de ejercicios y problemas algorítmicos resueltos como preparación para el concurso
+                            regional Programame. El proyecto incluye retos centrados en estructuras de datos,
+                            algoritmos,
+                            lógica de programación y optimización de soluciones utilizando Java.
+                        </p>
+                        <a href="https://github.com/Prensahidraulica/DAW/tree/main/concurso_programame" target="_blank"
+                            class="btn btn-primary" data-i18n="projectButton">
+                            Ver proyecto
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="project-card">
+                        <h4 data-i18n="">Proyecto 2: Proyecto Final de Programación</h4>
+                        <p data-i18n="">
+                            Aplicación desarrollada en Java con persistencia de datos mediante JPA y base de datos
+                            MySQL.
+                            El proyecto implementa operaciones CRUD, gestión de entidades relacionadas y una
+                            arquitectura
+                            orientada a objetos, aplicando buenas prácticas de desarrollo y acceso a datos.
+                        </p>
+                        <a href="https://github.com/Prensahidraulica/DAW/tree/main/1%C2%BADAW/Programaci%C3%B3n/Proyecto%20final%20con%20JPA/tareafinal_elenacusac"
+                            target="_blank" class="btn btn-primary" data-i18n="">
+                            Ver proyecto
+                        </a>
+                    </div>
+                </section>
+
+                <!-- EXPERIENCIA -->
+                <section id="experience" class="fade-up">
+                    <h2 data-i18n="experienceTitle">Experiencia</h2>
+                    <p data-i18n="experienceDescription"> 
+                        <b>MultiSafepay</b><br><br>
+
+                        Durante mi período de prácticas en el primer año de DAW en MultiSafepay participé en un entorno
+                        profesional de QA, colaborando con herramientas y metodologías utilizadas en proyectos reales.
+                        Esta experiencia me permitió comprender mejor el ciclo de vida del software, el trabajo en
+                        equipo
+                        y la importancia de desarrollar soluciones mantenibles y orientadas a negocio.<br><br>
+
+                        Además de reforzar mis conocimientos técnicos, pude mejorar competencias como la resolución de
+                        problemas, la comunicación dentro de equipos de desarrollo y la adaptación a nuevos entornos
+                        tecnológicos.
+                    </p>
+                </section>
+
+                <!-- CONTACTO -->
+                <section id="contact" class="fade-up">
+                    <h2 data-i18n="contactTitle" data-i18n="contactTitle">Contacto</h2>
+                    <p data-i18n="contactDescription">
+                        ¿Te interesa mi perfil o quieres conocer más sobre mis proyectos?<br><br>
+
+                        Estoy abierta a oportunidades de prácticas, posiciones junior y colaboraciones relacionadas con
+                        el desarrollo de software y aplicaciones web.<br><br>
+
+                        Puedes contactar conmigo a través de LinkedIn, GitHub o enviarme un correo al siguiente email.
+                        Estaré encantada de conversar sobre nuevas oportunidades y proyectos.<br><br>
+
+                        Email: villaelenacusac@gmail.com
+                    </p>
+
+                </section>
+            </article>
+
+            <!-- ==========================
+                 ASIDE
+            =========================== -->
+            <aside id="aside" class="col-lg-3 fade-up">
+                <div id="profile-card">
+                    <div class="profile-header">
+
+                        <img src="assets/img/Foto.jpeg" alt="Foto Elena Cusac" class="profile-photo">
+
+                        <h2>Elena Cusac</h2>
+
+                        <p class="job-title" data-i18n="jobTitle">
+                            Frontend & Java Developer
+                        </p>
+
+                    </div>
+
+                    <div class="availability" data-i18n="availability">
+                        <span class="status-dot"></span>
+                        Disponible para prácticas y empleo
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/Prensahidraulica" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/elena-cusac-ortigosa/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="tech-stack">
+
+                        <h3 data-i18n="mainTech">Tecnologías principales</h3>
+
+                        <span>Java</span>
+                        <span>Spring</span>
+                        <span>MySQL</span>
+                        <span>React</span>
+                        <span>Git</span>
+                        <span>Docker</span>
+
+                    </div>
+
+                    <a href="#contact" class="contact-btn" data-i18n="contactButton">Contactar</a>
+
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+    <footer id="footer">
+        <div class="container">
+            <p>© 2026 Elena Cusac</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/language.js"></script> 
+</body>
+
+</html>
